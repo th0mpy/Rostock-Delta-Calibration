@@ -36,7 +36,7 @@ class DeltaCalPlugin(octoprint.plugin.AssetPlugin,
             )
         )
 
-__plugin_name__ = "Delta Autocalibration"
+__plugin_name__ = "Rostock Autocalibration"
 
 def __plugin_load__():
     global __plugin_implementation__
