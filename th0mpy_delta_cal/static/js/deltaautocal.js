@@ -801,10 +801,8 @@ $(function () {
           }
         }
         self.loadEEProm = function () {
-		  //self.statusMessage("Loading EEProm values");
           self.eepromData([]);
           self.readEEPROMData();
-		  //self.statusMessage();		  
         };
 
         self.showCoords = function () {
