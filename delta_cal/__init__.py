@@ -22,17 +22,17 @@ class DeltaCalPlugin(octoprint.plugin.AssetPlugin,
     def get_update_information(self):
         return dict(
             systemcommandeditor=dict(
-                displayName="Delta Calibration Plugin",
+                displayName="Rostock Delta Calibration",
                 displayVersion=self._plugin_version,
 
                 # version check: github repository
                 type="github_release",
-                user="geneb",
-                repo="OctoPrint-Delta-Calibration",
+                user="th0mpy",
+                repo="Rostock-Delta-Calibration",
                 current=self._plugin_version,
 
                 # update method: pip
-                pip="https://github.com/geneb/OctoPrint-Delta-Calibration/archive/{target_version}.zip"
+                pip="https://github.com/th0mpy/Rostock-Delta-Calibration/archive/{target_version}.zip"
             )
         )
 

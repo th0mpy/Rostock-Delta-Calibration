@@ -1,9 +1,4 @@
 $(function () {
-	function sleep(delay)
-	{
-		var start = new Date().getTime();
-        while (new Date().getTime() < start + delay);
-    }
     "use strict";
     function DeltaAutoCalViewModel(parameters) {
         var self = this;
@@ -809,7 +804,6 @@ $(function () {
 		  self.statusMessage("Loading EEProm values");
           self.eepromData([]);
           self.readEEPROMData();
-		  sleep(5000);
 		  self.statusMessage();		  
         };
 
