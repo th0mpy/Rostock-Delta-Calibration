@@ -683,7 +683,7 @@ $(function () {
           });
           self.statusMessage("");
         }
-
+		
         self.fromHistoryData = function (data) {
           _.each(data.logs, function (line) {
             var match = self.firmwareRegEx.exec(line);
