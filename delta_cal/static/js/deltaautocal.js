@@ -801,10 +801,9 @@ $(function () {
           }
         }
         self.loadEEProm = function () {
-		  self.statusMessage("Reading EEPROM");
+		  self.statusMessage("ACCESSING EEPROM");
           self.eepromData([]);
           self.readEEPROMData();
-		  self.statusMessage("");
         };
 
         self.showCoords = function () {
