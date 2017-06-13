@@ -804,7 +804,7 @@ $(function () {
 		  self.statusMessage("Reading EEPROM");
           self.eepromData([]);
           self.readEEPROMData();
-		  self.statusMessage();
+		  self.statusMessage("");
         };
 
         self.showCoords = function () {
