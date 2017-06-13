@@ -801,6 +801,7 @@ $(function () {
           }
         }
         self.loadEEProm = function () {
+          self.statusMessage(" ");
 		  self.statusMessage("ACCESSING EEPROM");
           self.eepromData([]);
           self.readEEPROMData();
