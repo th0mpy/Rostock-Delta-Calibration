@@ -25,6 +25,7 @@ Your machine is <span style="color: red" data-bind="visible: isConnected() && !i
 -->
     <br>
     <button data-bind="enabled: isRepetierFirmware(), click: loadEEProm">{{ _('Load EEprom') }}</button>
+	<button data-bind="enabled: isRepetierFirmware(), click: isSeeMeCNCPrinter">{{ _('Reload Firmware') }}</button>
 
     <button data-bind="enable: isRepetierFirmware() && isConnected() && isSeeMeCNCPrinter(), click: beginDeltaCal">{{ _('Begin Delta Calibration') }}</button>
 	
