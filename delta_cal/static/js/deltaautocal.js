@@ -813,11 +813,10 @@ $(function () {
         }
         self.loadEEProm = function () {
           self.statusMessage(" ");
-		  self.statusMessage("ACCESSING EEPROM");
+		      self.statusMessage("ACCESSING EEPROM");
           self.eepromData([]);
           self.readEEPROMData();
-		  sleep(5000);
-		  self.statusMessage() + "   ---FINISHED---";
+		      self.statusMessage() + "   ---FINISHED---";
         };
 
         self.showCoords = function () {
@@ -848,15 +847,4 @@ $(function () {
 
     OCTOPRINT_VIEWMODELS.push([ DeltaAutoCalViewModel, ["controlViewModel", "connectionViewModel"], "#settings_plugin_delta_cal" ]);
 
-});
-function sleep(milliseconds)
-{
-	var start = new Date().getTime();
-	for (var i = 0; i < 1e7; i++)
-	{
-		if ((new Date().getTime() - start) > milliseconds)
-		{
-			break;
-		}
-	}
-}	
+});	
