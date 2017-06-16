@@ -535,7 +535,7 @@ $(function () {
             convertOutgoingEndstops();
             setNewParameters();
 
-            if( oldDeviation != newDeviation ){
+            //if( oldDeviation != newDeviation ){
               //Hacky fix to get the adjustments to go the right way!
               var newXStop = Math.round(deltaParams.xstop.toFixed(2));
               var newYStop = Math.round(deltaParams.ystop.toFixed(2));
@@ -571,9 +571,9 @@ $(function () {
               self.statusMessage("Success, changes written to EEPROM.");
               self.control.sendCustomCommand({ command: "G28" });
               console.log(self.statusMessage());
-            }else{
-              self.statusMessage("New calibration is not measureably better than the old - keeping the old calibration");
-            }
+            //}else{
+            //  self.statusMessage("New calibration is not measureably better than the old - keeping the old calibration");
+            //}
             self.calibrationComplete = true;
           }
           catch (err) {
