@@ -27,6 +27,8 @@ If you're working with an OctoPi distribution, you can sign into the "pi" accoun
 install the plugin this way:
 
     /home/pi/OctoPrint/venv/bin/python -m pip install https://github.com/th0mpy/Rostock-Delta-Calibration/archive/master.zip
+    To force re-install:
+    /home/pi/OctoPrint/venv/bin/python -m pip install https://github.com/th0mpy/Rostock-Delta-Calibration/archive/master.zip --ignore-installed --force-reinstall --no-deps
 
 You must also be running a version of Repetier Firmware from SeeMeCNC with a firmware date of
 20161209 or later.  (Issue an M115 to see the firmware date, ex.:
