@@ -804,7 +804,7 @@ $(function () {
           self.statusMessage(" ");
 		      self.statusMessage("ACCESSING EEPROM");
           self.eepromData([]);
-          self.readEEPROMData();
+          setTimeout(self.readEEPROMData(), 3000);
 		      self.statusMessage(self.statusMessage() + "   ---FINISHED---");
         };
 
